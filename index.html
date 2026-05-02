@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/b2b3fcb76e.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Olcha Premium Store</title>
+</head>
+<body>
+    <!-- Premium Navbar -->
+    <nav class="navbar hidden-anim">
+        <div class="nav-container">
+            <a href="#" class="brand">olcha<span>.uz</span></a>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="nav-actions">
+                <div class="action-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Compare</span>
+                </div>
+                <div class="action-item position-relative">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge" id="fav-badge">0</span>
+                    <span>Favorites</span>
+                </div>
+                <div class="action-item position-relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge" id="cart-badge">0</span>
+                    <span>Cart</span>
+                </div>
+                <div class="action-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section hidden-anim">
+            <div class="hero-text">
+                <h1>Next-Level Tech, Delivered Today.</h1>
+                <p>Experience the best smartphones with zero stress and 0% monthly payment options.</p>
+                <button class="cta-button">Shop Now</button>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="filters-section hidden-anim">
+            <div class="filter-group">
+                <label for="sortPrice"><i class="fa-solid fa-filter"></i> Sort By:</label>
+                <select id="sortPrice" class="premium-select">
+                    <option selected disabled value="default">Select Sorting</option>
+                    <option value="increase">Price: Low to High</option>
+                    <option value="decrease">Price: High to Low</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="card-wrapper" id="productGrid">
+                <!-- Products will be dynamically injected here by JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer hidden-anim">
+        <p>&copy; 2026 Olcha Premium Store. Crafted with perfection.</p>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
